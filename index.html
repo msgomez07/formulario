@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="contenidoprincipal">
+
+        <header id="encabezado">
+            <h1>Formulario de inscripcion</h1>
+            <p>Gracias por ser participe de este gran proyecto</p>
+        </header>
+
+        <form id="survey-form" action="#">
+            <div class="formcontainer">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name= "name" id="name" class="form_control" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="formcontainer">
+                <label id="email-label" for="email">Correo electronico</label>
+                <input type="email" name="email" id="email" class="form_control" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="formcontainer">
+                <label id="telefono-label" for="telefono">telefono</label>
+                <input type="number" name="telefono" id="telefono" class="form_control" placeholder="Ingrese su telefono" required>
+            </div>
+            <div class="formcontainer">
+                <p>Ingrese nivel academico</p>
+                <select id="selectnivel" name="selectnivel" class="form_control" required>
+                    <option disabled selected value>ingrese nivel academico</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="tecnico">tecnico</option>
+                    <option value="tecnologia">Tecnologia</option>
+                </select>
+            </div>
+            <div id="select_radio" class="formcontainer">
+                <p>Genero</p>
+
+                <label ><input type="radio" name="select" value="rmasculino" > Masculino</label>
+                
+                <label ><input type="radio" name="select" value="femenino" > femenino</label>
+                
+                <label ><input type="radio" name="select" value="indefenido" > indefenido</label>
+                
+            </div>
+
+            <div class="formcontainer">
+                <p>Que le gustaria aprender o mejorar</p>
+                <label><input type="checkbox" name="javascript"> javascript</label>
+                <label><input type="checkbox" name="nodejs"> NodeJs</label>
+                <label><input type="checkbox" name="angularjs"> AngularJS</label>
+                <label><input type="checkbox" name="php"> PHP</label>
+                <label><input type="checkbox" name="react"> React</label>
+                <label><input type="checkbox" name="vuejs"> VueJS</label>
+                <label><input type="checkbox" name="git"> GIT</label>
+            </div>
+            <div class="formcontainer">
+                <p>Comentarios</p>
+                <textarea id="comentariostexto" name="comentariostexto" placeholder="Ingrese sus comentarios..."></textarea>
+            </div>
+
+            <div class="formcontainer">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
